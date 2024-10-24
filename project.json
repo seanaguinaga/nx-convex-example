@@ -1,0 +1,16 @@
+{
+  "name": "workspace",
+  "$schema": "./node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "serve-demo": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["nx serve web","nx serve admin","nx dev convex"],
+        "parallel": true
+      }
+    }
+  }
+}
